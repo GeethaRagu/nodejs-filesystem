@@ -35,7 +35,7 @@ app.get(`/read`,(req,res)=>{
         files.forEach((item)=>{
               txtfile.push(item);
         });
-        res.status(200).send(txtfile.join('\n'));
+        res.status(200).send(txtfile.join('<br/>'));
     });
     
 
